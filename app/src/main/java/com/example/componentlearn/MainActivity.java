@@ -1,13 +1,16 @@
 package com.example.componentlearn;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
+import com.example.componentlearn.fragment.FragmentActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+  private static final String TAG = "MainActivity";
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+  {
+    mTitle = new String[]{
+        "Fragment",
+    };
+    mClasses = new Class[]{
+        FragmentActivity.class,
+    };
   }
 }
